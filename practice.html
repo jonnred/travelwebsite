@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hey{
+            border: 5px solid grey;
+            height: 50px;
+            background-color:;
+        }
+    </style>
+    <script type="text/javascript">
+    window.onload = () => {
+        var obj= document.querySelector("#obj");
+        var value = document.querySelector("#value");
+        var btn= document.querySelector("#btn");
+        var waz= document.querySelector("#hey");
+        
+        key=obj.value;
+        val=value.value;
+        btn.addEventListener("click", ()=>{
+            if (obj.value && value.value !=null){
+                localStorage.setItem(obj.value,value.value);
+                location.reload();
+            }
+            else{
+                alert("input a char");
+            }
+            if (key && val == null)
+            {
+                key = "";
+                val = "";
+            }
+        })  
+        
+        waz.innerHTML+= `key : <strong>${localStorage.key(0)}</strong> `;
+        waz.innerHTML+= `value : <strong>${localStorage.getItem(localStorage.key(0))}</strong> `;
+        localStorage.length.forEach(element => {
+            i++;
+            console.log(i)
+            
+        });
+
+    }
+    </script>
+</head>
+<body>
+<fieldset>
+    <label for="obj">key</label>
+    <input id="obj" type="text" value="">
+    <label for="obj">value</label>
+    <input id="value" type="text" value="">
+    <label for="obj">submit</label>
+    <input id="btn" type="button" value="">
+</fieldset>
+<div id="hey"></div>
+
+</body>
+</html>
