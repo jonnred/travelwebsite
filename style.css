@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0rem 6rem;
-    background-color: beige;
     height: 100vh;
+    
 }
 h1 {
     font-size: 45px;
@@ -16,9 +15,10 @@ h1 {
 }
 nav{
     display: flex;
+    margin: 0rem 6rem;
+
 }
 nav ul {
-    text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -26,7 +26,24 @@ nav ul {
     justify-content: space-evenly;
     align-items: center;
 }
-#picture {
-    height: 2000px;
-    background-color: brown;
+#pictures img{
+    height: 100vh;
+    background-color:;
+}
+footer{
+    margin: 0px;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 168, 99);
+}
+nav ul a {
+
+}
+#background{
+    display: block;
+    max-width: 100%;
+    background: rgba(0, 0, 0 , .2);
+    z-index: -1;    
+    position: absolute;
 }
