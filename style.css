@@ -16,7 +16,9 @@ h1 {
 nav{
     display: flex;
     margin: 0rem 6rem;
-
+}
+.container{
+    height: 80vh;
 }
 nav ul {
     list-style: none;
@@ -46,4 +48,18 @@ nav ul a {
     background: rgba(0, 0, 0 , .2);
     z-index: -1;    
     position: absolute;
+}
+/* section1*/
+.section1 {
+    background-color: darkblue;
+    opacity: .2;
+    filter: contrast(.1);
+}
+.section2{
+    background-color: brown;
+    opacity: .2;
+}
+.section3{
+    background-color: burlywood;
+    opacity: .2;
 }
